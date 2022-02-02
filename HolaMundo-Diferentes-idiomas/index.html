@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Metatags -->
+        <meta charset="UTF-8">
+        <meta http-equiv= "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+
+        <!-- jQuery -->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- Title -->
+        <title> Hello World 2.0 </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        
+        
+        <div class = "container animateOff"></div>
+
+        <!-- Dark Theme Button -->
+        <label id = "label"> Dark Theme
+        
+        <input type="checkbox" 
+               name="checkAddress" 
+               onclick="checkAddress(this)" 
+               class = "checkbox" />
+             
+        </label>
+
+     <!-- Javascript -->     
+     <script type="text/javascript">
+
+    // Dark Theme Button
+    var lab = document.getElementById('label');
+        
+        
+    // This function switches White & Dark Theme
+    function checkAddress(checkbox)
+    {
+   
+        if (checkbox.checked)
+{
+       
+            document.body.style.backgroundColor = "#222";
+            
+            lab.style.color = "#fff";
+           
+        } else {
+        
+            document.body.style.backgroundColor = "#E1E7F5";
+           
+            lab.style.color = "#000";
+        }
+       
+    }
+
+    </script>
+    <script src="index.js"></script>
+   </body>
+
+</html>
